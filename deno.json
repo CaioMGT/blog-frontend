@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "deno.window",
+            "deno.ns",
+            "dom"
+        ],
+        "jsx": "preserve",
+        "jsxImportSource": "npm:solid-js"
+    },
+    "tasks": {
+        "build": "deno run --allow-env --allow-write --allow-read --allow-run --allow-sys --allow-net './scripts/build.ts'",
+        "serve": "deno run --allow-env --allow-write --allow-read --allow-net --allow-run './scripts/serve.ts' --watch"
+    },
+    "importMap": "import_map.json"
+}
