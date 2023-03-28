@@ -1,50 +1,25 @@
-:root {
-    --solid-logo-rotation: 0;
-}
-
 body {
     margin: 0%;
     color: white;
-    background-color: #263044;
+    background-color: rgb(38 38 38);
 }
-
-#root {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.roboto {
+    font-family: "Roboto", sans-serif;
 }
-
-h1 {
-    font-size: large;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.center {
+    text-align: center;
 }
-
+.activeTop {
+    background-color: rgba(156, 163, 175, 0.2);
+}
+.top-button:hover{
+    background-color:rgba(255, 255, 255, 0.5);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
 a {
+    color: inherit;
     text-decoration: none;
-    color: #5880cf;
-}
-
-code {
-    font-size: large;
-    background-color: #15181f;
-    font-family: monospace;
-    padding: 0.5rem;
-}
-
-img {
-    display: block;
-    height: 10rem;
-    width: auto;
-}
-
-#solid-logo {
-    margin: 2.5rem;
-    transform: rotate(var(--solid-logo-rotation));
-    transition: all 1s ease;
 }
